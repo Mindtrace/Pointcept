@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="pointcept",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        'torch>=1.12.1',
+        'torchvision>=0.13.1',
+        'h5py',
+        'pyyaml',
+        'addict',
+        'einops',
+        'scipy',
+        'plyfile',
+        'termcolor',
+        'timm',
+        'torch-geometric',
+        'torch-scatter',
+        'torch-sparse',
+        'torch-cluster',
+        'tensorboard',
+        'tensorboardx',
+        'spconv-cu121',
+        'ftfy',
+        'regex',
+        'tqdm'
+    ],
+    author="Xiaoyang Wu",
+    author_email="xiaoyang.wu.cs@gmail.com",
+    description="Point Cloud Perception Toolbox",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/Pointcept/Pointcept",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.8',
+)
